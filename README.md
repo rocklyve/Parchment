@@ -12,6 +12,7 @@
   <a href="https://circleci.com/gh/rechsteiner/Parchment"><img src="https://circleci.com/gh/rechsteiner/Parchment/tree/master.svg?style=shield&circle-token=8e4da6c8bf09271f72f32bf3c7a7c9d743ff50fb" /></a>
   <a href="https://cocoapods.org/pods/Parchment"><img src="https://img.shields.io/cocoapods/v/Parchment.svg" /></a>
   <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg" /></a>
+  <a href="https://img.shields.io/badge/Accio-supported-0A7CF5.svg"><img src="https://img.shields.io/badge/Accio-supported-0A7CF5.svg" /></a>
 </p>
 
 <br/>
@@ -437,6 +438,27 @@ Parchment also supports [Carthage](https://github.com/Carthage/Carthage). To ins
    `copy-frameworks` script phase
 
 See [this guide](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application) for more details on using Carthage.
+
+### Accio
+
+  Add the following to your Package.swift:
+
+  ```swift
+ .package(url: "https://github.com/rechsteiner/Parchment.git", .upToNextMajor(from: "1.6.1")),
+ ```
+
+  Next, add `Parchment` to your App targets dependencies like so:
+
+  ```swift
+ .target(
+     name: "App",
+     dependencies: [
+         "Parchment",
+     ]
+ ),
+ ```
+
+  Then run `accio update`.
 
 ## Requirements
 
