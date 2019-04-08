@@ -157,7 +157,9 @@
 		95FB3AC821A1BE8C00EDAAD5 /* Parchment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA04A4B1C53BFE40054E5E0 /* Parchment.framework */; };
 		95FB3AC921A1BE8C00EDAAD5 /* Parchment.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA04A4B1C53BFE40054E5E0 /* Parchment.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		95FE3AF91FFEDBCE00E6F2AD /* PagingDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FE3AF81FFEDBCE00E6F2AD /* PagingDistance.swift */; };
+		E6EF63266DD62857EA36B1FE56A8C6CE /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E92AE731952E6C3BB20386E39604577 /* Quick.framework */; };
 		E9D1BE1E211E409400E86B72 /* PagingMenuItemSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1BE1D211E409400E86B72 /* PagingMenuItemSource.swift */; };
+		F617159D8C226DA437AD9A204975D714 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E40F491CD462DAC4C5343BA23506FD24 /* Nimble.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -437,6 +439,7 @@
 		3EC0184C1C95F993005421AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		3EF3C1E21CA0870E00CDFE26 /* FixedPagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixedPagingViewController.swift; sourceTree = "<group>"; };
 		3EFEFBF61C80B8820023C949 /* PagingIndicatorLayoutAttributesSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingIndicatorLayoutAttributesSpec.swift; sourceTree = "<group>"; };
+		5E92AE731952E6C3BB20386E39604577 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Dependencies/iOS/Quick.framework; sourceTree = "<group>"; };
 		9525C63A1FEE6DDC00A18EA0 /* NavigationBarExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationBarExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9525C63C1FEE6DDC00A18EA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9525C63E1FEE6DDC00A18EA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -517,6 +520,7 @@
 		95FB3ABD21A19A4E00EDAAD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95FB3AC121A19B2000EDAAD5 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		95FE3AF81FFEDBCE00E6F2AD /* PagingDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingDistance.swift; sourceTree = "<group>"; };
+		E40F491CD462DAC4C5343BA23506FD24 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Dependencies/iOS/Nimble.framework; sourceTree = "<group>"; };
 		E9D1BE1D211E409400E86B72 /* PagingMenuItemSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingMenuItemSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -559,6 +563,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6EF63266DD62857EA36B1FE56A8C6CE /* Quick.framework in Frameworks */,
+				F617159D8C226DA437AD9A204975D714 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,6 +627,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33E4D0F9AFD416A797E6E182487AFA46 /* Parchment */ = {
+			isa = PBXGroup;
+			children = (
+				E40F491CD462DAC4C5343BA23506FD24 /* Nimble.framework */,
+				5E92AE731952E6C3BB20386E39604577 /* Quick.framework */,
+			);
+			name = Parchment;
+			sourceTree = "<group>";
+		};
 		3E2AAD061CA81D490044AAA5 /* CalendarExample */ = {
 			isa = PBXGroup;
 			children = (
@@ -761,6 +776,7 @@
 				95FB3AB021A19A4D00EDAAD5 /* HeaderExample */,
 				3EA04A841C53C3960054E5E0 /* Frameworks */,
 				3EA04A4C1C53BFE40054E5E0 /* Products */,
+				C8A231A5C9991D3CED29CAE8754CC7A9 /* Dependencies */,
 			);
 			sourceTree = "<group>";
 		};
@@ -936,6 +952,14 @@
 			path = HeaderExample;
 			sourceTree = "<group>";
 		};
+		C8A231A5C9991D3CED29CAE8754CC7A9 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				33E4D0F9AFD416A797E6E182487AFA46 /* Parchment */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1035,6 +1059,7 @@
 				3EA04A471C53BFE40054E5E0 /* Frameworks */,
 				3EA04A481C53BFE40054E5E0 /* Headers */,
 				3EA04A491C53BFE40054E5E0 /* Resources */,
+				E7861D42CEF5D9184CF46BA2F107203A /* Accio */,
 			);
 			buildRules = (
 			);
@@ -1412,6 +1437,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		E7861D42CEF5D9184CF46BA2F107203A /* Accio */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Dependencies/iOS/Nimble.framework",
+				"$(SRCROOT)/Dependencies/iOS/Quick.framework",
+			);
+			name = Accio;
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nimble.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2067,6 +2110,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Dependencies/iOS",
 				);
 				INFOPLIST_FILE = Parchment/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -2094,6 +2138,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Dependencies/iOS",
 				);
 				INFOPLIST_FILE = Parchment/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
